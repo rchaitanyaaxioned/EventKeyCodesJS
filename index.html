@@ -24,11 +24,32 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
+      <section class="key-code-generator">
+        <div class="wrapper">
+          <div class="first-screen">
+            <input type="text" placeholder="Press any key to get the keyCode" onkeydown="keyCodeGenerator(event)">
+          </div>
+          <ul class="second-screen">
+            <li>
+              <p>event.key</p>
+              <div><input type="text" class="event-key" size="40"></div>
+            </li>
+            <li>
+              <p>event.key<span class="text-cap">code</span></p>
+              <div><input type="text" class="event-key-code" size="40"></div>
+            </li>
+            <li>
+              <p>event.code</p>
+              <div><input type="text" class="event-code" size="40"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
 
     </main>
     <!--main section end-->
