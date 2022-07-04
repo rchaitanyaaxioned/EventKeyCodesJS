@@ -82,6 +82,10 @@ sub { bottom: -.25em; }
 .cf { *zoom: 1; }
 
 /*for all*/
+html, body, .container, main {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -106,49 +110,88 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
-
 /*=================================
   main styling starts here
 =================================*/
+.key-code-generator {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #E1E1E1;
+  justify-content: center;
+}
 
+.key-code-generator .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/*styling for 1st screen start here*/
+.first-screen {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.first-screen input {
+  display: block;
+  width: 29%;
+  padding: 20px 2%;
+  background-color: #EEEEEE;
+  border: 1px solid #999999;
+  color: #000;
+  font-size: 20px;
+}
 
+.first-screen input::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+/*styling for 1st screen end here*/
 
+/*styling for 2nd screen start here*/
+.second-screen {
+  width: 50%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.second-screen li {
+  flex-basis: 33.33%;
+  text-align: center;
+}
 
+.second-screen p {
+  color: #555555;
+  font-size: 15px;
+}
 
+.second-screen input {
+  width: 40%;
+  padding: 20px 20%;
+  margin-top: 5px;
+  background-color: #EEEEEE;
+  border: 1px solid #999999;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+/*styling for 2nd screen end here*/
 /*=================================
   main styling ends here
 =================================*/
-
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
-
-
-
-
  /*=================================
   footer styling ends here
 =================================*/ 
-
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+@media only screen and (max-width: 995px) {}  
