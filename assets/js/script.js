@@ -1,4 +1,4 @@
-function keyCodeGenerator(event) {
+document.body.onkeydown = function (event) {
   var eventKey = event.key;
   var eventKeyCode = event.which;
   var eventCode = event.code;
@@ -14,25 +14,3 @@ function keyCodeGenerator(event) {
   document.querySelector(".event-key-code").value = eventKeyCode;
   document.querySelector(".event-code").value = eventCode;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
